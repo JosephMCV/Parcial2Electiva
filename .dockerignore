@@ -1,0 +1,16 @@
+.idea/
+*.iml
+.vscode/
+target/
+bin/
+out/
+.DS_Store
+Thumbs.db
+.git/
+.gitignore
+*~ 
+*.swp
+jacoco.exec
+target/site/jacoco/
+.env
+*.log
