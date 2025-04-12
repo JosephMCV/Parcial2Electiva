@@ -1,9 +1,9 @@
 #!/bin/bash
 
+# === MICRO Parcial ===
 BASE_URL="http://localhost:8080/mascotas"
 
 echo "🟢 Creando mascota..."
-# Guardamos la respuesta y extraemos el ID usando grep y cut
 response=$(curl -s -X POST "$BASE_URL" \
   -H "Content-Type: application/json" \
   -d '{"nombre": "Firulais", "raza": "Labrador"}')
@@ -33,4 +33,9 @@ echo -e "\n"
 
 echo "✅ Mascotas actuales:"
 curl -s "$BASE_URL"
+echo -e "\n"
+
+# === MICRO Taller ===
+echo "🎓 Llamando al microservicio del taller en http://localhost:8081/"
+curl -s http://localhost:8081/
 echo -e "\n"
